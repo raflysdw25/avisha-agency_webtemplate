@@ -482,7 +482,7 @@ nav ul {
     margin-top: 30px !important;
   }
   #tabs .features .img-feature {
-    display: none;
+    margin-top: 10px !important;
   }
   #tabs .features:nth-child(even) {
     margin-left: 0 !important;
@@ -514,7 +514,7 @@ nav ul {
     margin-top: 30px !important;
   }
   #tabs .features .img-feature {
-    display: none;
+    margin-top: 10px !important;
   }
   #tabs .features:nth-child(even) {
     margin-left: 0 !important;
