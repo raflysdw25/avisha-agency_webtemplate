@@ -1,5 +1,7 @@
+// font
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800&display=swap');
 
+// Body
 body{  
     font-family: 'Montserrat';
     margin: 0;
@@ -8,6 +10,7 @@ body{
     min-height: 100vh;
 }
 
+// For all Navigation
 nav{
     .navbar-brand{
         font-weight: 800;
@@ -35,20 +38,26 @@ nav{
     }
 }
 
+
+// Motto
 .motto{
     font-weight: 700;
     font-size: 20px;
 }
 
+// Support Motto
 .support-motto{
     font-size: 14px;
     font-weight: 400;
     color: #aaa;
 }
 
+
+// Header
 #header{
-    // margin: 0px 150px;
     padding: 100px 0;
+
+    /* Perlu tambah pengaturan width dan height pada header right jika judul diganti gambar */
     #header-right{
         p{
             font-size: 50px;
@@ -76,6 +85,7 @@ nav{
 }
 
 
+// Header about
 #header_about{
     #habt_title{
         padding: 100px;
@@ -98,7 +108,9 @@ nav{
     }
 }
 
+// Content
 #content{
+    // style content on index
     #latest-work{     
         #latest-work-title{
             h6{
@@ -169,7 +181,9 @@ nav{
             }
         }
     }
+    // End style content on index
 
+    // Style content on about
     #section-our_mission{
         margin: 100px 0;
         h1{
@@ -239,7 +253,9 @@ nav{
             }
         }
     }
+    // End style content on about
 
+    // Style content on works
     #tabs{
         .nav{
             &.nav-tabs{
@@ -331,7 +347,9 @@ nav{
             }
         }   
     }
+    // End style content on works
 
+    // Style content on work_details
     #section-details{
         margin-top: 50px;
         a{
@@ -364,7 +382,9 @@ nav{
             margin-bottom: 20px;
         }
     }
+    // End style content on work_details
      
+    // Style content on contact
     #section-contact-us{
         margin-top: 30px;
         .social-media{
@@ -403,9 +423,10 @@ nav{
             }
         }
     }
+    // End style content on contact
 }
 
-
+// Style footer
 #section-footer{
     background-color: #F68D26;
     margin: 0;
@@ -450,15 +471,25 @@ nav{
     }
 }
 
+// Style on mobile device
 @media (min-width: 767px) and (max-width: 1000px){
     #latest-work{
         #latest-work-content{
             .box{
-                margin-left: 80px !important;
-                margin-right: 80px !important;
+                margin: 5px 0 !important;
                 a, p{
                     font-size: 10px !important;
                 }
+            }
+        }
+    }
+
+    #section-video{
+        #info_video{
+            .card{
+                top: 0 !important;
+                margin: 5px 0 !important;
+                font-size: 10px;   
             }
         }
     }
@@ -492,6 +523,7 @@ nav{
             }
 
             .box{
+                margin: 5px 0 !important;
                 a, p{
                     font-size: 10px !important;
                 }
@@ -508,7 +540,8 @@ nav{
     #section-video{
         #info_video{
             .card{
-                margin: 0 100px !important;
+                top: 0 !important;
+                margin: 5px 0 !important;
                 font-size: 10px;   
             }
         }
@@ -522,16 +555,71 @@ nav{
         }
 
         .features{
+            margin-top: 30px !important;
             .img-feature{
                 display: none;
-                // margin-left: 0px !important;
-                // margin-top: 20px !important;
             }
 
             &:nth-child(even){
                 margin-left: 0 !important;
-                padding: 0px !important;
             }
         }
-    }    
+    }
+    
+    #section-footer{
+        padding: 0 20px !important;
+        
+    }
+}
+
+@media (max-width:480px){
+    #latest-work{
+        #latest-work-content{
+            .latest-work-items:nth-child(odd){
+                margin-top: 10px !important;
+            }
+
+            .box{
+                margin: 5px 0 !important;
+                a, p{
+                    font-size: 10px !important;
+                }
+            }
+        }
+    }
+
+    #section-video{
+        #info_video{
+            .card{
+                top: 0 !important;
+                margin: 5px 0 !important;
+                font-size: 8px;   
+            }
+        }
+    }
+
+    #tabs{
+        .allaz{
+            .card{
+                margin-top: 25px !important;
+            }
+        }
+
+        .features{
+            margin-top: 30px !important;
+
+            .img-feature{
+                display: none;
+            }
+
+            &:nth-child(even){
+                margin-left: 0 !important;
+            }
+        }
+    }
+
+    #section-footer{
+        padding: 0 20px !important;
+        
+    }
 }

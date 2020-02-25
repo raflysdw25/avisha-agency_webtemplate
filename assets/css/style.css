@@ -42,6 +42,7 @@ nav ul {
 
 #header {
   padding: 100px 0;
+  /* Perlu tambah pengaturan width dan height pada header right jika judul diganti gambar */
 }
 
 #header #header-right p {
@@ -434,11 +435,15 @@ nav ul {
 
 @media (min-width: 767px) and (max-width: 1000px) {
   #latest-work #latest-work-content .box {
-    margin-left: 80px !important;
-    margin-right: 80px !important;
+    margin: 5px 0 !important;
   }
   #latest-work #latest-work-content .box a, #latest-work #latest-work-content .box p {
     font-size: 10px !important;
+  }
+  #section-video #info_video .card {
+    top: 0 !important;
+    margin: 5px 0 !important;
+    font-size: 10px;
   }
   #tabs .allaz .card {
     margin-top: 25px !important;
@@ -456,6 +461,9 @@ nav ul {
   #latest-work #latest-work-content .latest-work-items:nth-child(odd) {
     margin-top: 10px !important;
   }
+  #latest-work #latest-work-content .box {
+    margin: 5px 0 !important;
+  }
   #latest-work #latest-work-content .box a, #latest-work #latest-work-content .box p {
     font-size: 10px !important;
   }
@@ -463,18 +471,56 @@ nav ul {
     text-align: left !important;
   }
   #section-video #info_video .card {
-    margin: 0 100px !important;
+    top: 0 !important;
+    margin: 5px 0 !important;
     font-size: 10px;
   }
   #tabs .allaz .card {
     margin-top: 25px !important;
+  }
+  #tabs .features {
+    margin-top: 30px !important;
   }
   #tabs .features .img-feature {
     display: none;
   }
   #tabs .features:nth-child(even) {
     margin-left: 0 !important;
-    padding: 0px !important;
+  }
+  #section-footer {
+    padding: 0 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #latest-work #latest-work-content .latest-work-items:nth-child(odd) {
+    margin-top: 10px !important;
+  }
+  #latest-work #latest-work-content .box {
+    margin: 5px 0 !important;
+  }
+  #latest-work #latest-work-content .box a, #latest-work #latest-work-content .box p {
+    font-size: 10px !important;
+  }
+  #section-video #info_video .card {
+    top: 0 !important;
+    margin: 5px 0 !important;
+    font-size: 8px;
+  }
+  #tabs .allaz .card {
+    margin-top: 25px !important;
+  }
+  #tabs .features {
+    margin-top: 30px !important;
+  }
+  #tabs .features .img-feature {
+    display: none;
+  }
+  #tabs .features:nth-child(even) {
+    margin-left: 0 !important;
+  }
+  #section-footer {
+    padding: 0 20px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
