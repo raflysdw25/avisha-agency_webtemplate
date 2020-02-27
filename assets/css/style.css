@@ -52,14 +52,25 @@ nav ul {
 
 #header #header-right p b {
   font-weight: 800;
+  line-height: 10px;
 }
 
 #header #header-right p span {
   color: #F68D26;
 }
 
+#header #header-right p.brand-name {
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 50px;
+}
+
 #header #header-left {
   text-align: right;
+}
+
+#header #header-left .motto {
+  margin-top: 20px;
 }
 
 #header #header-left a {
@@ -82,6 +93,10 @@ nav ul {
 
 #header_about #habt_title h1 span {
   color: #F68D26;
+}
+
+#header_about #habt_title .img-fluid {
+  width: 500px;
 }
 
 #header_about #habt_vision {
@@ -132,6 +147,10 @@ nav ul {
   margin-bottom: 20px;
 }
 
+#content #section-clients .img-fluid {
+  max-width: 80%;
+}
+
 #content #section-video {
   padding: 20px;
 }
@@ -168,6 +187,10 @@ nav ul {
 
 #content #section-our_mission p {
   font-size: 14px;
+}
+
+#content #section-our_mission img.img-small {
+  max-width: 380px;
 }
 
 #content #section-our_services {
@@ -252,7 +275,13 @@ nav ul {
 }
 
 #content #tabs .client {
-  margin-top: 20px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+#content #tabs .client .img-fluid {
+  margin: auto;
+  max-width: 70%;
 }
 
 #content #tabs .byclient-event {

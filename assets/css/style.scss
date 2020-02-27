@@ -53,6 +53,8 @@ nav{
 }
 
 
+
+
 // Header
 #header{
     padding: 100px 0;
@@ -64,9 +66,16 @@ nav{
             font-weight: 400;
             b{
                 font-weight: 800;
+                line-height: 10px;
             }
             span{
                 color: #F68D26;
+            }
+
+            &.brand-name{
+                font-weight: 800;
+                font-size: 70px;
+                line-height: 50px;
             }
             
         }
@@ -74,6 +83,9 @@ nav{
 
     #header-left{
         text-align: right;
+        .motto{
+            margin-top: 20px;
+        }
         a{
             color: #bbb;
 
@@ -96,6 +108,9 @@ nav{
             span{
                 color: #F68D26;
             }
+        }
+        .img-fluid{
+            width: 500px;
         }
     }
     
@@ -157,6 +172,9 @@ nav{
             font-weight: 800;
             margin-bottom: 20px;
         }
+        .img-fluid{
+            max-width: 80%;
+        }
     }
 
     #section-video{
@@ -195,6 +213,12 @@ nav{
         }
         p{
             font-size: 14px;
+        }
+
+        img{
+            &.img-small{
+                max-width: 380px;  
+            }
         }
     }
 
@@ -277,7 +301,14 @@ nav{
         }
 
         .client{
-            margin-top: 20px;
+            margin: auto;
+            margin-bottom: 30px;
+
+            .img-fluid{
+                margin: auto;
+                max-width: 70%;
+            }
+            
         }
         
         .byclient-event{
